@@ -23,14 +23,13 @@ body {
     width: 100%;
   }
   .article__preview__content {
-    padding: 2rem 2rem;
+    padding: 2rem 3rem;
   }
   .article__preview__title {
     margin-bottom: 10px;
     letter-spacing: 0.2px;
     color: hsl(217, 19%, 35%);
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 500;
   }
   .article__preview__excerpt {
     color: hsl(214, 17%, 51%);
@@ -40,21 +39,23 @@ body {
   .article__preview__social {
     display: flex;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-top: 2rem;
   }
   .article__preview__avatar {
     border-radius: 50%;
     max-width: 12%;
-    margin-right: 1rem;
+    margin-right: 1.2rem;
+  }
+  .article__preview__author {
+    color: #646975;
   }
   .article__preview__date {
-    color: hsl(214, 17%, 51%);
+    color: hsl(212, 23%, 69%);
   }
   .article__preview__share {
     color: hsl(217, 19%, 35%);
     margin-left: auto;
-    margin-right: 3rem;
+    margin-right: 2rem;
     padding: 0.5rem;
     border-radius: 50%;
   }
@@ -63,7 +64,44 @@ body {
 
 /* --- Deskstop STYLES --- */
 @media only screen and (min-width: 1250px) {
+  .article__preview {
+    display: flex;
+    width: 50%;
+    margin: 5rem auto;
 
+  }
+  .article__preview__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .article__preview__content {
+    padding: 2rem 3rem;
+  }
+  .article__preview__title {
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  .article__preview__excerpt {
+    margin-bottom: 3rem;
+  }
+  .article__preview__social {
+    display: flex;
+    align-items: center;
+  }
+  .article__preview__avatar {
+    max-width: 12%;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+  }
+  .article__preview__author {
+    font-weight: 700;
+  }
+  .article__preview__share {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
 }
 
 .attribution {
